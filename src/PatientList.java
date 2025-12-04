@@ -2,7 +2,6 @@ public class PatientList {
     Patient head = null ;
     Patient tail = null ;
 
-
     void addPatient(Patient patient){
         if(head == null){
             head = patient;
@@ -12,43 +11,50 @@ public class PatientList {
             patient.next = null;
             tail = patient;
         }
-        System.out.println("Patient added");
+        //System.out.println("Patient added");
     }
-    void removePatient(int id){
-        if(head == null){
+    void removePatient(int id) {
+        if (head == null) {
             System.out.println("The list is empty");
-        }else if(head.ID == id){
+        } else if (head.ID == id) {
             head = head.next;
-            System.out.println("The first patient is deleted");
-        }else {
-            Patient temp = head ;
+            System.out.println("The first patient " + id + " is deleted");
+        } else {
+            Patient temp = head;
             Patient temp2 = head;
-            while(temp != null){
-                temp2 = temp;
+            while(temp != null && temp.ID != id){
+                temp2 = temp ;
                 temp = temp.next;
             }
-            //if()
-
-
-
-
-
+            temp2.next = temp.next;
 
         }
-
-
-
+        System.out.println("The patient " + id + " is deleted");
     }
-    void print(){
+    void findPatient(int id){
+        Patient temp = head;
+        while(temp != null) {
+            if (temp.ID == id) {
+                System.out.println("Name " + temp.name +
+                        " Severity " + temp.severity +
+                        " Age " + temp.age);
+                return;
+            }
+            temp = temp.next;
+        }
+        System.out.println("The patient not found");
+    }
+    void printList(){
 
         if (head == null){
             System.out.println("The list is empty");
         }else{
             Patient temp = head;
             while(temp != null){
-                System.out.print(temp.name);
+                System.out.println(temp.name);
                 temp = temp.next;
             }
+            System.out.println();
         }
 
     }
