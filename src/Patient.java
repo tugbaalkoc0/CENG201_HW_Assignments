@@ -1,4 +1,4 @@
-public class Patient {
+public class Patient  {
     Patient next;
     int ID;
     String name;
@@ -11,4 +11,5 @@ public class Patient {
         this.severity = severity ;
         this.age = age ;
     }
+
 }
