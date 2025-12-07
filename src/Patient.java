@@ -1,6 +1,5 @@
 public class Patient  {
     Patient next;
-    Patient data;
     int ID;
     String name;
     int severity;

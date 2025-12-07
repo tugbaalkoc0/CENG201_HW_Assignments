@@ -14,9 +14,11 @@ public class PatientList {
         //System.out.println("Patient added");
     }
     void removePatient(int id) {
+        //if list is empty
         if (head == null) {
             System.out.println("The list is empty");
-        } else if (head.ID == id) {
+        } // if id is first patient's id
+        else if (head.ID == id) {
             head = head.next;
             System.out.println("The first patient " + id + " is deleted");
         } else {
@@ -50,9 +52,11 @@ public class PatientList {
             System.out.println("The list is empty");
         }else{
             Patient temp = head;
+            int i = 0;
             while(temp != null){
-                System.out.println(temp.name);
+                System.out.println((i+1) +"-" + temp.name);
                 temp = temp.next;
+                i++;
             }
             System.out.println();
         }
