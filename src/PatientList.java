@@ -3,10 +3,13 @@ public class PatientList {
     Patient tail = null ;
 
     void addPatient(Patient patient){
+        //Adding first patient
         if(head == null){
             head = patient;
-            tail = patient;
-        }else{
+            tail = patient;//
+        }
+        //Adding to end
+        else{
             tail.next = patient;
             patient.next = null;
             tail = patient;
@@ -31,16 +34,17 @@ public class PatientList {
             temp2.next = temp.next;
 
         }
-        System.out.println("The patient " + id + " is deleted");
+        System.out.println("The patient " + id + " is deleted \n");
     }
     void findPatient(int id){
         Patient temp = head;
         while(temp != null) {
             if (temp.ID == id) {
-                System.out.println("Name " + temp.name +
-                        " Severity " + temp.severity +
-                        " Age " + temp.age);
-                return;
+             System.out.println("Name :" + temp.name + "\n" +
+                        "Severity : " + temp.severity + "\n "+
+                        "Age : " + temp.age + "\n");
+             return;
+
             }
             temp = temp.next;
         }

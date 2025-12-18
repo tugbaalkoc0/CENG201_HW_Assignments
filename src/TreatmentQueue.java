@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class TreatmentQueue {
     TreatmentRequest front;
     TreatmentRequest rear;
@@ -8,10 +10,12 @@ public class TreatmentQueue {
         front = null;
         rear = null;
     }
+    //for control the queue is empty or not
     boolean isEmpty(){
         return count == 0;
     }
     void enqueue(TreatmentRequest request){
+        //Add first request to queue
         if(isEmpty()){
             front = request;
             rear = request ;
@@ -45,9 +49,10 @@ public class TreatmentQueue {
         else{
             TreatmentRequest temp = front;
             while(temp != null){
-                System.out.print(temp + " -" );
+                System.out.print(temp + "\n" );
                 temp = temp.next;
             }
+            System.out.println();
 
         }
     }

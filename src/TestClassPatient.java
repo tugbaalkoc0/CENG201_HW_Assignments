@@ -2,7 +2,7 @@ public class TestClassPatient {
     public static void main(String[] args) {
         PatientList list = new PatientList();
         Patient p1 = new Patient(1284," Tuğba Alk " , 1 ,20);
-        Patient p2 = new Patient(1285 , " Sude Yıl ",2,22);
+        Patient p2 = new Patient(1285 ," Sude Yıl ",2,22);
         Patient p3 = new Patient(1286 ," İpek El " , 4,21);
         Patient p4 = new Patient(1287 ," Ahsen Kış" ,3 , 23);
         Patient p5 = new Patient(1288," Mehmet Gök " ,6,26);
