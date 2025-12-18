@@ -2,6 +2,7 @@ public class PatientList {
     Patient head = null ;
     Patient tail = null ;
 
+  // Add a new patient to the list
     void addPatient(Patient patient){
         //Adding first patient
         if(head == null){
@@ -16,6 +17,7 @@ public class PatientList {
         }
         //System.out.println("Patient added");
     }
+    //remove a patient by their ID
     void removePatient(int id) {
         //if list is empty
         if (head == null) {
@@ -36,6 +38,7 @@ public class PatientList {
         }
         System.out.println("The patient " + id + " is deleted \n");
     }
+    //Search for a patient by ID and return the object
     void findPatient(int id){
         Patient temp = head;
         while(temp != null) {
@@ -50,6 +53,7 @@ public class PatientList {
         }
         System.out.println("The patient not found");
     }
+    //Print the list
     void printList(){
 
         if (head == null){

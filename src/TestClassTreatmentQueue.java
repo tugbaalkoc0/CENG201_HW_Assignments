@@ -26,5 +26,7 @@ public class TestClassTreatmentQueue {
         queue.dequeue();
 
         queue.printQueue();
+
+        queue.size();
     }
 }

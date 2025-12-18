@@ -10,10 +10,11 @@ public class TreatmentQueue {
         front = null;
         rear = null;
     }
-    //for control the queue is empty or not
+    //control the queue is empty or not
     boolean isEmpty(){
         return count == 0;
     }
+    //Add a new treatment request to the queue
     void enqueue(TreatmentRequest request){
         //Add first request to queue
         if(isEmpty()){
@@ -27,6 +28,7 @@ public class TreatmentQueue {
             count++;
         }
     }
+    // Remove and return the first treatment request
     void dequeue(){
         // There are no request
         if(isEmpty()){
@@ -39,9 +41,11 @@ public class TreatmentQueue {
         }
 
     }
+    //Return the number of request in the queue
     void size(){
         System.out.println("The size of the queue is " + count);
     }
+    // Print the queue
     void printQueue(){
         if(isEmpty()){
             System.out.println("The queue is empty There are no reguest");

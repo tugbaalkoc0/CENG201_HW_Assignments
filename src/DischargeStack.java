@@ -7,7 +7,7 @@ public class DischargeStack {
         top = null;
 
     }
-
+    //Add a discharge record
     void push(DischargeRecord record) {
         Node temp = new Node(record);
 
@@ -19,7 +19,7 @@ public class DischargeStack {
         }
         count++;
     }
-
+    // Remove and return the top record
     void pop() {
         if (count == 0) {//if stack is empty
             System.out.println("The stack is empty");
@@ -29,6 +29,7 @@ public class DischargeStack {
             count -- ;
         }
     }
+    //View the most recent discharge without removing it
     void peek(){
         if(count == 0){
             System.out.println("The stack is empty");
@@ -36,7 +37,7 @@ public class DischargeStack {
             System.out.println(top.data);
         }
     }
-
+    //Print all discharge records
     void printStack(){
         if(count == 0){
             System.out.println("The stack is empty");
