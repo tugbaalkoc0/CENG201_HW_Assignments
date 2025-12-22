@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class TreatmentQueue {
     TreatmentRequest front;
     TreatmentRequest rear;
@@ -57,6 +55,7 @@ public class TreatmentQueue {
                 temp = temp.next;
             }
             System.out.println();
+
 
         }
     }
