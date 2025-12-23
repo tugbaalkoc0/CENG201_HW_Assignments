@@ -70,6 +70,41 @@ public class PatientList {
         }
 
     }
+    // sort the patient list by severity
+    void severitySort(){
+        if(head == null){
+            return ;
+        }
+        boolean swapped;
+
+        do {
+            swapped = false;
+            Patient current = head;
+
+            //swap all information
+            while (current.next != null) {
+                if (current.severity > current.next.severity) {
+                    int tempID = current.ID;
+                    String tempName = current.name;
+                    int tempSeverity = current.severity;
+                    int tempAge = current.age;
+
+                    current.ID =current.next.ID;
+                    current.name = current.next.name;
+                    current.severity = current.next.severity;
+                    current.age = current.next.age;
+
+                    current.next.ID = tempID;
+                    current.next.name = tempName;
+                    current.next.severity = tempSeverity;
+                    current.next.age = tempAge;
+
+                    swapped = true;
+                }
+                current = current.next;
+            }
+        }while (swapped);
+    }
 
 
 }
