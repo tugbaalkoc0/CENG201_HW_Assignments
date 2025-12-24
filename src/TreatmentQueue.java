@@ -46,7 +46,7 @@ public class TreatmentQueue {
     // Print the queue
     void printQueue(){
         if(isEmpty()){
-            System.out.println("The queue is empty There are no reguest");
+            System.out.println("The queue is empty There are no request");
         }
         else{
             TreatmentRequest temp = front;
