@@ -5,7 +5,5 @@ public class Node {
     public Node(DischargeRecord data){
         this.next = null;
         this.data = data;
-
     }
-
 }

@@ -14,7 +14,6 @@ public class PriorityTreatmentQueue {
         }else{
             normalQueue.enqueue(request);
         }
-
     }
     // Treat the patient
     TreatmentRequest dequeue(){
@@ -38,5 +37,4 @@ public class PriorityTreatmentQueue {
         System.out.println("Normal Patients: ");
         normalQueue.printQueue();
     }
-
 }

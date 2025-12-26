@@ -37,7 +37,6 @@ public class TreatmentQueue {
             front = front.next;
             count --;
         }
-
     }
     //Return the number of request in the queue
     void size(){
@@ -55,8 +54,6 @@ public class TreatmentQueue {
                 temp = temp.next;
             }
             System.out.println();
-
-
         }
     }
 }

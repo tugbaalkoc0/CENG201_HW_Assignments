@@ -68,7 +68,6 @@ public class PatientList {
             }
             System.out.println();
         }
-
     }
     // sort the patient list by severity
     void severitySort(){
@@ -105,6 +104,4 @@ public class PatientList {
             }
         }while (swapped);
     }
-
-
 }

@@ -22,6 +22,5 @@ public class TestClassPatient {
         list.printList();
         list.severitySort();
         list.printList();
-
     }
 }

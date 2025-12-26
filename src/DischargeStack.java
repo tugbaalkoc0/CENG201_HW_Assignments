@@ -5,7 +5,6 @@ public class DischargeStack {
     public DischargeStack() {
         count = 0;
         top = null;
-
     }
     //Add a discharge record
     void push(DischargeRecord record) {

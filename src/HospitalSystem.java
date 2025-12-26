@@ -32,7 +32,6 @@ public class HospitalSystem {
             DischargeRecord record = new DischargeRecord(request.patientId,System.currentTimeMillis());
             dischargeStack.push(record);
         }
-
     }
     // record the discharges
     void addDischargeRecord(DischargeRecord record){
@@ -51,10 +50,5 @@ public class HospitalSystem {
 
         System.out.println("DISCHARGE STACK");
         dischargeStack.printStack();
-
-
     }
-
-
-
 }

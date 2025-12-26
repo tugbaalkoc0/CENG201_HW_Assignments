@@ -14,9 +14,7 @@ public class TreatmentRequest {
         this.arrivalTime = arrivalTime;
         this.priority = priority;
         this.next = null;
-
     }
-
     public String toString() {
         return "Patient ID : " + patientId + " Arrival time :" + arrivalTime;
     }
